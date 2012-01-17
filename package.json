@@ -1,0 +1,17 @@
+{
+  "author": "Michael Bell",
+  "name": "node-poker",
+  "description": "A complete game engine for Texas Holdem poker",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mjhbell/node-poker",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mjhbell/node-poker.git"
+  },
+  "main": "index",
+  "engines": {
+    "node": "0.6.7"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
