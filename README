@@ -1,4 +1,4 @@
-Intended to be a complete engine to execute a poker game for mutliple players.
+Intended to be a complete engine to execute a poker game for multiple players.
 
 Stage 1: Build core utilities and entities such as hand evaluation
 Stage 2: Build basic game logic to allow joining, check/bet/raise/fold, and round progression.
