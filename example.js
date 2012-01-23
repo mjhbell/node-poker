@@ -1,29 +1,15 @@
 var poker = require('node-poker');
 
+var room = new poker.Room(1);
 
-function Hand(){
-	this.cards = new Array();
-};
+var table = room.AddTable(10,20,2,10,'table_1',100,1000);
 
-hands = new Array();
+table.AddPlayer('bob',1000)
+table.AddPlayer('jane',500)
 
-hand1 = new Hand();
-hand2 = new Hand();
+table.players[0].Bet(10);
+table.players[1].Bet(20);
 
-hand1.cards[0] = 'AD';
-hand1.cards[1] = 'AS';
-hand1.cards[2] = 'AC';
-hand1.cards[3] = 'AH';
-hand1.cards[4] = 'KD';
-hand1.cards[5] = '7D';
-hand1.cards[6] = '4D';
-hands[0] = hand1;
+table.players[0].Call();
 
-hand2.cards[0] = 'AD';
-hand2.cards[1] = 'KS';
-hand2.cards[2] = 'QC';
-hand2.cards[3] = 'JH';
-hand2.cards[4] = 'TD';
-hands[1] = hand2;
-
-console.log(poker.RankHands(hands));
+console.log(table);
