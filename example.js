@@ -1,8 +1,6 @@
 var poker = require('node-poker');
 
-var room = new poker.Room(1);
-
-var table = room.AddTable(10,20,2,10,'table_1',100,1000);
+var table = new poker.Table(10,20,2,10,'table_1',100,1000;
 
 table.AddPlayer('bob',1000)
 table.AddPlayer('jane',500)
